@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> hw07_10cm_로그인 </title>
+    <style>
+        body {
+            background-color: lightyellow
+        }
+
+        hgroup h1 {
+            font-weight: bold;
+            padding: 10px 0 0 20px;
+        }
+
+        h1 a {
+            color: pink;
+        }
+
+        nav {
+            height: 34px;
+            background: lightpink;
+            margin-left: 0px;
+        }
+
+        nav li {
+            float: left;
+            list-style-type: none;
+            padding: 5px 130px;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        nav a:link {
+            color: white;
+        }
+
+        nav a:visited {
+            color: white;
+        }
+
+        nav a:hover {
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: blueviolet;
+        }
+
+        form {
+            color: purple;
+            width: 50%;
+            position: absolute;
+            left: 25%;
+        }
+
+        input {
+            background-color: pink;
+        }
+    </style>
+</head>
+<header>
+    <hgroup>
+        <h1><a href="./hw07.html">♡핑크빛 권정열♡</a></h1>
+    </hgroup>
+    <nav>
+        <ul>
+            <li><a href="./hw07_10cm.html">권정열 소개</a></li>
+            <li><a href="./hw07_10cm_album.html">앨범 안내</a></li>
+            <li><a href="./hw07_10cm_youtube.html">Youtube</a></li>
+            <li><a href="./hw07_id_pw.html">로그인</a></li>
+            </ol>
+    </nav>
+</header>
+<br><br>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><b>로그인 정보 입력</b></legend>
+            <p>ID : <input type="text" name="ID" size="15"></p>
+            <P>PW : <input type="password" name="PW" size="15" required></P>
+            <p></p>
+            <input type="submit" value="로그인">
+            <input type="reset" value="다시작성">
+        </fieldset>
+    </form>
+</body>
