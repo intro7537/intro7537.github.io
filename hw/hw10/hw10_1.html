@@ -1,0 +1,24 @@
+<script>
+    var x, y;
+
+    document.write("<table border='1'>");
+
+    document.write("<tr>")
+    for (x = 1; x <= 9; x++) {
+        document.write("<td><b>" + x + "단</b></td>");
+    }
+    document.write("</tr>");
+
+    for (x = 1; x <= 9; x++) {
+        document.write("<tr>");
+
+        for (y = 1; y <= 9; y++) {
+            document.write("<td>" + y + "*" + x + "=" + (y * x) + "</td>");
+        }
+
+        document.write("<tr>");
+    }
+
+    document.write("</table>");
+
+</script>

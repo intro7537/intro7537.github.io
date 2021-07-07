@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <p>[Fruit1]</p>
+    <p id="fruit0"></p>
+    <p>[Fruit2]</p>
+    <p id="fruit1"></p>
+    <p>[Fruit3]</p>
+    <p id="fruit2"></p>
+    <script>
+        var fruits = new Array(
+            ['사과', '21000원', '10개'],
+            ['참외', '18000원', '20개'],
+            ['귤', '15000원', '30개']
+        );
+        for (var i = 0; i < 3; i++) {
+            var fname = document.getElementById("fruit" + i);
+            fname.textContent = fruits[i];
+        }
+    </script>
+</body>

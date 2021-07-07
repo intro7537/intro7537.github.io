@@ -1,0 +1,35 @@
+<script>
+    var arr = new Array();
+
+    for (var i = 0; i <= 9; i++)
+        arr.push(new Array());
+
+    var x, i, j;
+
+    document.write("<table border='1'>");
+
+    document.write("<tr>");
+    for (i = 1; i <= 9; i++) {
+        document.write("<td><b>" + i + "단</b></td>");
+    }
+
+    document.write("</tr>");
+
+    for (i = 1; i <= 9; i++) {
+        document.write("<tr>");
+        for (j = 1; j <= 9; j++) {
+
+            x = i * j;
+            arr[i][j] = x;
+            document.write("<td>" + j + "*" + i + "=" + arr[i][j] + "</td>");
+
+        }
+        document.write("</tr>");
+
+    }
+
+    document.write("</table>");
+
+</script>
+<p />
+<button type="button">구구단 배열 데이터 보기</button>
