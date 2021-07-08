@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8' />
+    <style>
+        button {
+            background-color: mediumturquoise;
+            height: 40px;
+            margin: 10px 80px 0 0
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="cal(10)">10까지 더하기</button>
+    <button type="button" onclick="cal(50)">50까지 더하기</button>
+    <button type="button" onclick="cal(100)">100까지 더하기</button>
+    <script>
+        function cal(num) {
+            var sum = 0;
+            for (var i = 1; i <= num; i++) {
+                sum += i;
+            }
+            alert(num + "까지 더한 값은 " + sum + "입니다");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").mouseenter(function () {
+                $(this).animate({
+                    width: '400px', height: '400px'
+                });
+            });
+            $("img").mouseleave(function () {
+                $(this).animate({
+                    width: '100px', height: '100px'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <img src="./img/rabbit.jpg" width='100px' height='100px'>
+</body>
+
+</html>
