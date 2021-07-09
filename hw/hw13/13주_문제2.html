@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").hide();
+    
+            $("button").addClass("bold");
+            $("button.soccer").click(function () {
+                $("button.soccer").addClass("bold");
+                $("button.baseball").removeClass("bold");
+                $("button.basketball").removeClass("bold");
+                $("img.soccer").toggle();
+                $("img.baseball").hide();
+                $("img.basketball").hide();
+            });
+        $("button.baseball").click(function () {
+            $("button.baseball").addClass("bold");
+            $("button.soccer").removeClass("bold");
+            $("button.basketball").removeClass("bold");
+            $("img.baseball").toggle();
+            $("img.soccer").hide();
+            $("img.basketball").hide();
+        });
+        $("button.basketball").click(function () {
+            $("button.basketball").addClass("bold");
+            $("button.soccer").removeClass("bold");
+            $("button.baseball").removeClass("bold");
+            $("img.basketball").toggle();
+            $("img.soccer").hide();
+            $("img.baseball").hide();
+        });
+
+        });
+    </script>
+    <style>
+        button {
+            margin: 40px 30px 0px;
+        }
+
+        .bold {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>당신이 좋아하는 스포츠는?</h1>
+    <button type="button" class="soccer">프로축구</button>
+    <button type="button" class="baseball">프로야구</button>
+    <button type="button" class="basketball">프로농구</button>
+    <br>
+    <img class="soccer" src="./img/soccer.jpg" />
+    <img class="baseball" src="./img/baseball.jpg" />
+    <img class="basketball" src="./img/basketball.jpg" />
+
+</body>
+
+</html>

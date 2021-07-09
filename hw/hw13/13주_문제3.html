@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img.second").hide();
+            $("button").click(function () {
+                $("img.second").slideToggle("fast");
+                $("button").toggleClass("big");
+            })
+        })
+    </script>
+    <style>
+        img.first {
+            width: 160px;
+            height: 160px;
+        }
+
+        img.second {
+            width: 700px;
+            height: 700px;
+            margin: 0px 0px 0px 10px;
+        }
+        button {
+            margin: 10px 0px 50px 10px;
+        }
+        .big {
+            border: 2px solid black;
+        }
+        </style>
+</head>
+
+<body>
+    <img src="./img/rabbit.jpg" class="first">
+    <br>
+    <button type="button">큰 이미지 보기/닫기</button>
+    <br>
+    <img src="./img/rabbit.jpg" class="second">
+</body>
+
+</html>

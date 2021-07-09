@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var count_y = 0;
+            var count_lb = 0;
+            var count_b = 0;
+            $("div.yellow").click(function () {
+                count_y++;
+                $("p:first", this).text("mouse down")
+                $("p:last", this).text("총 클릿 횟수 " + count_y);
+            });
+            $("div.lightblue").click(function () {
+                count_lb++;
+                $("p:first", this).text("mouse down")
+                $("p:last", this).text("총 클릿 횟수 " + count_lb);
+            });
+            $("div.blue").click(function () {
+                count_b++;
+                $("p:first", this).text("mouse down")
+                $("p:last", this).text("총 클릿 횟수 " + count_b);
+            });
+        });
+    </script>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .lightblue {
+            background-color: lightblue;
+        }
+
+        .blue {
+            background-color: rgb(63, 227, 248)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yellow">
+        <p>마우스 클릿 횟수</p>
+        <p>0</p>
+    </div>
+    <div class="lightblue">
+        <p>마우스 클릿 횟수</p>
+        <p>0</p>
+    </div>
+    <div class="blue">
+        <p>마우스 클릿 횟수</p>
+        <p>0</p>
+    </div>
+</body>
+
+</html>
